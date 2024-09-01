@@ -1,0 +1,25 @@
+
+/* Google Font */
+
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+
+    font-family: "Chewy", "system-ui", "Sans-Serif", ;
+}
+
+#euro10 {
+  color:green
+}
+
+#euro50 {
+  color: orange;
+}
+
+#euro100 {
+  color:red
+}
