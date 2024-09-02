@@ -15,6 +15,7 @@ body {
     background-color: lightgray;
 }
 
+/*styling for navigation bar*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -48,10 +49,17 @@ nav {
     display: none; /* Dölj på större skärmar */
 }
 
-
 .active {
   background-color: #04AA6D;
   color: white;
+}
+
+
+
+footer {
+    margin-top: 35%;
+    font-size: medium;
+    color: black;
 }
 
 #euro10 {
