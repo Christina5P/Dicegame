@@ -1,14 +1,13 @@
 
 
 
-.dice {
+.dice{
     height: 80px;
     width: 80px;
     border: 2px solid black;
     display: flex;
     justify-content: center;
-    align-items: center;*/
-    font-size: 3rem;
+    align-items: center;
     margin: 5% 45%;
     color: black;
     background-color: white;
@@ -45,7 +44,7 @@
     border: 2px solid black;
     border-radius: 10px;
       }
-      
+
 /* Dice sides for 3D animation*/
 .dice.show-1  { transform: translateZ(-40px) rotateY(   0deg); }
 .dice.show-2  { transform: translateZ(-40px) rotateY(-180deg); }
