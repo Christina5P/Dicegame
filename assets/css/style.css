@@ -13,6 +13,15 @@ body {
 
     font-family: "Chewy", "Sans-Serif";
     background-color: lightgray;
+    font-size: larger;
+}
+.euro{
+width: 100%;
+padding: 4%; 
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+box-sizing: border-box; 
 }
 
 
@@ -82,6 +91,9 @@ nav {
 }
 
 
+.hidden {
+    display: none;
+}
 
 footer {
     margin-top: 35%;
@@ -90,14 +102,22 @@ footer {
 }
 
 /* instructions*/
-#euro10 {
-  color:green
+
+#bet{
+text-align: center;  
 }
+#euro10 {
+   color:red;
+  }
 #euro50 {
   color: orange;
 }
 #euro100 {
-  color:red
+  color:green; 
+}
+
+#luck{
+  padding: 5%;
 }
 
 @media (max-width: 768px) {
