@@ -42,7 +42,6 @@ button {
     font-weight: bold;
     text-align: center;
     background-color: rgb(131, 127, 127);
-    color: white;
     height: 10%;
     width: 25%;
     margin: 1rem;
@@ -103,7 +102,7 @@ footer {
 
 /* instructions*/
 
-#bet{
+.bet{
 text-align: center;  
 }
 #euro10 {
