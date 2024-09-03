@@ -10,7 +10,11 @@ let maxChoices = 0;
 let choicecounter = 0;
 const playerChoices = [];
 let playerHasChosen = false;
-
+let messageElement = document.getElementById("result");
+const winnervideo = document.createElement("img");
+winnervideo.src = "assets/images/win.gif", alt="winner", autoplay=true;
+const loservideo = document.createElement("img");
+loservideo.src = "assets/images/lose.gif", alt="looser", autoplay=true;
 
 // Toggle menu on smaller devices
 function toggle() {
@@ -88,3 +92,36 @@ function updateRollinstructions(playerChoices) {
         rollInstructionsElement.textContent = `Please pick ${maxChoices} number(s) before rolling the dice.`;
     } 
 }
+
+
+//Function to compare playerschoice with dice
+function checkAnswer(randomNumber) {
+    let selectedImage = document.querySelector(".image.selected");
+
+    setTimeout(() => {
+        if (selectedImage) {
+            if (playerChoices.includes(randomNumber.toString())) {
+                switch (selectedImage.id) {
+                    case "10":
+                        messageElement.textContent = "You won 10 euros!";
+                        break;
+                    case "50":
+                        messageElement.textContent = "You won 50 euros!";
+                        break;
+                    case "100":
+                        messageElement.textContent = "You won 100 euros!";
+                        break;
+                }
+                messageElement.appendChild(winnervideo);
+                winnervideo.autoplay = true;
+      
+            } else {
+                messageElement.textContent = "You lost";
+                messageElement.appendChild(loservideo);
+                loservideo.autoplay = true;
+            }
+        }
+        console.log(randomNumber);
+    }, 3000);
+}
+ 

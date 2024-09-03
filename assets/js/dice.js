@@ -48,7 +48,6 @@ dice.addEventListener("click", function () {
     dice.classList.remove("show-1", "show-2", "show-3", "show-4", "show-5", "show-6");
     dice.classList.add(`show-${randomNumber}`);
     dice.classList.add("animate");
-
     playerChoices.push(randomNumber);
     checkAnswer(randomNumber);
 });

@@ -50,6 +50,7 @@ button {
    box-sizing: border-box;
   }
 
+
 /*styling for navigation bar*/
 nav {
     display: flex;
@@ -110,22 +111,21 @@ text-align: center;
 text-align: center;  
 }
 
+#diceContainer {
+text-align: justify;  
+}
 
-/* instructions*/
-
-#euro10 {
-   color:red;
+  #result {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
   }
-#euro50 {
-  color: orange;
-}
-#euro100 {
-  color:green; 
-}
 
-#luck{
-  padding: 5%;
-}
+  #result img{
+    margin-top:10px;
+  }
+
+
 
 @media (max-width: 768px) {
     .topnav {
@@ -141,8 +141,24 @@ text-align: center;
                 display: flex; /* Visa menyn när användaren klickar */
             }
 
-
     .icon {
         display: block; /* Visa hamburgermenyn på små skärmar */
     }
   }
+
+
+  
+/* instructions*/
+#euro10 {
+   color:red;
+  }
+#euro50 {
+  color: orange;
+}
+#euro100 {
+  color:green; 
+}
+
+#luck{
+  padding: 5%;
+}
