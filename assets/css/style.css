@@ -13,7 +13,9 @@ body {
 
     font-family: "Chewy", "Sans-Serif";
     background-color: lightgray;
-    font-size: larger;
+    font-size: xx-large;
+    text-align: center;
+    
 }
 .euro{
 width: 100%;
@@ -50,6 +52,12 @@ button {
    box-sizing: border-box;
   }
 
+  #play{
+  text-align: center;
+  font-family:"chewy";
+  margin-left: 35%;
+  margin-top: 5%;
+    }
 
 /*styling for navigation bar*/
 nav {
@@ -103,16 +111,16 @@ footer {
 
 
 .roll{
-text-align: center;  
+/*text-align: center;  */
 }
 
 
 .bet{
-text-align: center;  
+/*text-align: center;*/  
 }
 
 #diceContainer {
-text-align: justify;  
+/*text-align: justify;  */
 }
 
   #result {
@@ -123,9 +131,12 @@ text-align: justify;
 
   #result img{
     margin-top:10px;
-  }
+    }
 
-
+    .play{
+      color: white;
+    /*  text-align: center;*/
+    }
 
 @media (max-width: 768px) {
     .topnav {
@@ -149,6 +160,7 @@ text-align: justify;
 
   
 /* instructions*/
+
 #euro10 {
    color:red;
   }
@@ -160,5 +172,5 @@ text-align: justify;
 }
 
 #luck{
-  padding: 5%;
+  padding: 10%;
 }

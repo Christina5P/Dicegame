@@ -8,13 +8,14 @@ const rollInstructionsElement = document.getElementById("rollInstructions");
 let selectedImage = null;
 let maxChoices = 0;
 let choicecounter = 0;
-const playerChoices = [];
+let playerChoices = [];
 let playerHasChosen = false;
 let messageElement = document.getElementById("result");
+const playButton = document.getElementById("play");
 const winnervideo = document.createElement("img");
-winnervideo.src = "assets/images/win.gif", alt="winner", autoplay=true;
+winnervideo.src = "assets/images/win.gif", alt="winner" 
 const loservideo = document.createElement("img");
-loservideo.src = "assets/images/lose.gif", alt="looser", autoplay=true;
+loservideo.src = "assets/images/lose.gif", alt="looser" 
 
 // Toggle menu on smaller devices
 function toggle() {
@@ -94,7 +95,7 @@ function updateRollinstructions(playerChoices) {
 }
 
 
-//Function to compare playerschoice with dice
+//Function to compare playerschoice with dice and resultvideo
 function checkAnswer(randomNumber) {
     let selectedImage = document.querySelector(".image.selected");
 
@@ -113,15 +114,35 @@ function checkAnswer(randomNumber) {
                         break;
                 }
                 messageElement.appendChild(winnervideo);
-                winnervideo.autoplay = true;
+                winnervideo.loop === false;
+                winnervideo.addEventListener('ended', function () {
+                winnervideo.style.display = none;
+                });
       
             } else {
                 messageElement.textContent = "You lost";
                 messageElement.appendChild(loservideo);
-                loservideo.autoplay = true;
+                loservideovideo.addEventListener("ended",function(){
+                 console.log("the video is end");
+                 },false);
+                };
             }
-        }
+        
         console.log(randomNumber);
-    }, 3000);
+    }, 4000);
 }
- 
+
+/*function GameOver{
+    image.button.removeEventlistener('click', function (event) {
+    });
+    ResetGlobalVariables();
+}*/
+
+function newgame() {
+    playButton.addEventListener("click", function (newgame) {
+         window.scrollTo(0, 0);
+        location.reload();
+        console.log("new game:", reload);
+    });
+}
+ newgame();

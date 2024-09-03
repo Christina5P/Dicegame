@@ -1,0 +1,11 @@
+# Query: <li>
+# Flags: RegExp
+# ContextLines: 1
+
+2 results - 1 file
+
+instructions.html:
+  55          <p><span id="euro10">10 euro bet</span> - you can pick 3 numbers to compare with the dice.</p>
+  56:         <p><span id="euro50"> 50 euro bet</span> - you pick 2 numbers.</p> 
+  57:         <p><span id="euro100">100 euro bet</span> -you pick 1 number.</p>
+  58          <section>
