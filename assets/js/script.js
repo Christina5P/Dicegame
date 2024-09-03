@@ -42,20 +42,22 @@ function toggle() {
        
 // Text-instructions how may number to pick
 function updatePickNumber(selectedImage) {
-    if (selectedImage) {
-        if (selectedImage.id === "100") {
-            maxChoices = 1;
-           picknumberElement.textContent = "Now you can pick 1 number";
-        } else if (selectedImage.id === "50") {
-            maxChoices = 2;
-            picknumberElement.textContent = "Now you can pick 2 numbers";
+        if (selectedImage) {
+            if (selectedImage.id === "100") {
+                maxChoices = 1;
+                picknumberElement.textContent = "Now you can pick 1 number";
+            } else if (selectedImage.id === "50") {
+                maxChoices = 2;
+                picknumberElement.textContent = "Now you can pick 2 numbers";
               
-        } else if (selectedImage.id === "10") {
-            maxChoices = 3;
-            picknumberElement.textContent = "Now you can pick 3 numbers";
-        }
+            } else if (selectedImage.id === "10") {
+                maxChoices = 3;
+                picknumberElement.textContent = "Now you can pick 3 numbers";
+            }
+        } 
     }
-}
+
+
  // Event listener for number clicks
 buttons.forEach(button => {
     button.addEventListener("click", function(event) {
@@ -75,10 +77,14 @@ function changeBoardColor(event, maxChoices) {
 
 // Text instructions to roll dice
 function updateRollinstructions(playerChoices) {
+    if (!selectedImage) {
+        alert("Please make a bet before picking numbers!");
+        return;
+    }
     if (playerChoices.length === maxChoices) {
         rollInstructionsElement.textContent = `You have picked ${maxChoices} number(s). You can now roll the dice`;
         playerHasChosen = true;
     } else {
         rollInstructionsElement.textContent = `Please pick ${maxChoices} number(s) before rolling the dice.`;
-    }
+    } 
 }
