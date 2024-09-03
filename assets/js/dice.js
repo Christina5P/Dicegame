@@ -31,9 +31,7 @@ for (let dotPosition of dotPositionMatrix[i]) {
 }
 dice.appendChild(face);
 }
-
 return dice;
-
 }
 
 // Call for parent element from DOM and add a childelement
@@ -42,13 +40,11 @@ diceContainer.appendChild(dice);
 
 
 // To roll the dice 
-let playerHasChosen = false;
-
 dice.addEventListener("click", function () {
        if (!playerHasChosen) {
         alert("Please make a bet before rolling the dice!");
         return; 
-    }
+    } else
     dice.classList.remove("show-1", "show-2", "show-3", "show-4", "show-5", "show-6");
     dice.classList.add(`show-${randomNumber}`);
     dice.classList.add("animate");

@@ -100,11 +100,19 @@ footer {
     color: black;
 }
 
-/* instructions*/
+
+.roll{
+text-align: center;  
+}
+
 
 .bet{
 text-align: center;  
 }
+
+
+/* instructions*/
+
 #euro10 {
    color:red;
   }

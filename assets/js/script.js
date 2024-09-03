@@ -4,13 +4,15 @@ console.log("js loaded");
 const euro = document.querySelectorAll(".image");
 const buttons = document.querySelectorAll(".control");
 const picknumberElement = document.getElementById("picknumber");
+const rollInstructionsElement = document.getElementById("rollInstructions");
 let selectedImage = null;
-let maxChoices = 1;
+let maxChoices = 0;
 let choicecounter = 0;
 const playerChoices = [];
+let playerHasChosen = false;
 
 
-// toggle menu on smaller devices
+// Toggle menu on smaller devices
 function toggle() {
     var menu = document.getElementById("menu");
     menu.classList.toggle("show");
@@ -21,7 +23,7 @@ function toggle() {
     }
 }
 
- // Listener click to save pick img
+ //  Event listener for image clicks
      euro.forEach(image => {
          image.addEventListener("click", function () {
              selectedImage = image;
@@ -38,7 +40,7 @@ function toggle() {
     });
      });
        
-// text-instructions how may number to pick
+// Text-instructions how may number to pick
 function updatePickNumber(selectedImage) {
     if (selectedImage) {
         if (selectedImage.id === "100") {
@@ -54,9 +56,15 @@ function updatePickNumber(selectedImage) {
         }
     }
 }
-       
-// change color of picked numbers
+ // Event listener for number clicks
+buttons.forEach(button => {
+    button.addEventListener("click", function(event) {
+        changeBoardColor(event, maxChoices);
+        updateRollinstructions(playerChoices);
+    });
+});
 
+// Change color of picked numbers
 function changeBoardColor(event, maxChoices) {
     if (choicecounter < maxChoices) {
         event.target.style.backgroundColor = "#FFFFFF";
@@ -65,9 +73,12 @@ function changeBoardColor(event, maxChoices) {
     }
 }
 
-// event listener
- buttons.forEach(button => {
-    button.addEventListener("click", function(event) {
-    changeBoardColor(event, maxChoices);
-    });
-});
+// Text instructions to roll dice
+function updateRollinstructions(playerChoices) {
+    if (playerChoices.length === maxChoices) {
+        rollInstructionsElement.textContent = `You have picked ${maxChoices} number(s). You can now roll the dice`;
+        playerHasChosen = true;
+    } else {
+        rollInstructionsElement.textContent = `Please pick ${maxChoices} number(s) before rolling the dice.`;
+    }
+}
