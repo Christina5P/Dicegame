@@ -57,6 +57,8 @@ button {
   font-family:"chewy";
   margin-left: 35%;
   margin-top: 5%;
+  padding: 10px;
+  box-sizing: border-box;
     }
 
 /*styling for navigation bar*/

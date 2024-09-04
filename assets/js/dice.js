@@ -52,7 +52,6 @@ dice.addEventListener("click", function () {
     checkAnswer(randomNumber);
 });
 
-
 function newgame() {
     playButton.addEventListener("click", function (newgame) {
          window.scrollTo(0, 0);

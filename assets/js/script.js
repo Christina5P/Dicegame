@@ -12,10 +12,10 @@ let playerChoices = [];
 let playerHasChosen = false;
 let messageElement = document.getElementById("result");
 const playButton = document.getElementById("play");
-const winnervideo = document.createElement("img");
-winnervideo.src = "assets/images/win.gif", alt="winner" 
-const loservideo = document.createElement("img");
-loservideo.src = "assets/images/lose.gif", alt = "looser"
+const winner_img = document.createElement("img");
+winner_img.src = "assets/images/win.png", alt="winner" 
+const loser_img = document.createElement("img");
+loser_img.src = "assets/images/lose.png", alt = "looser"
 
 // Toggle menu on smaller devices
 function toggle() {
@@ -93,36 +93,29 @@ function updateRollinstructions(playerChoices) {
         rollInstructionsElement.textContent = `Please pick ${maxChoices} number(s) before rolling the dice.`;
     } 
 }
-
-
-//Function to compare playerschoice with dice and resultvideo
+// Function to compare playerschoice with dice and resultvideo
 function checkAnswer(randomNumber) {
     let selectedImage = document.querySelector(".image.selected");
 
     setTimeout(() => {
-        if (selectedImage) {
-            if (playerChoices.includes(randomNumber.toString())) {
-                switch (selectedImage.id) {
-                    case "10":
-                        messageElement.textContent = "You won 10 euros!";
-                        break;
-                    case "50":
-                        messageElement.textContent = "You won 50 euros!";
-                        break;
-                    case "100":
-                        messageElement.textContent = "You won 100 euros!";
-                        break;
-                }
-                 messageElement.appendChild(winnervideo);
-      winnervideo.autoplay = true;
-      
-} else {
-    messageElement.textContent = "You lost";
-    messageElement.appendChild(loservideo);
-    loservideo.autoplay = true;
-}
-}
-console.log(randomNumber);
- 
-    }, 4000);
+        if (selectedImage && playerChoices.includes(randomNumber.toString())) {
+            switch (selectedImage.id) {
+                case "10":
+                    messageElement.textContent = "You won 10 euros!";
+                    break;
+                case "50":
+                    messageElement.textContent = "You won 50 euros!";
+                    break;
+                case "100":
+                    messageElement.textContent = "You won 100 euros!";
+                    break;
+            }
+            messageElement.appendChild(winner_img);
+        } else {
+            messageElement.textContent = "You lost";
+            messageElement.appendChild(loser_img);
+        }
+        
+        console.log(randomNumber);
+    }, 4000); 
 }
