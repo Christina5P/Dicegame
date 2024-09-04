@@ -15,6 +15,7 @@ body {
     background-color: lightgray;
     font-size: xx-large;
     text-align: center;
+    flex-direction: column;
     
 }
 .euro{
@@ -57,7 +58,7 @@ button {
   font-family:"chewy";
   margin-left: 35%;
   margin-top: 5%;
-  padding: 10px;
+  padding: 20px;
   box-sizing: border-box;
     }
 
