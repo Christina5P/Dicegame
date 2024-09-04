@@ -60,13 +60,14 @@ button {
     }
 
 /*styling for navigation bar*/
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-   width: 100%;
-    box-sizing: border-box; /* Inkludera padding i bredden */
+    width: 100%;
+    box-sizing: border-box; 
 }
 
 .topnav {
@@ -75,7 +76,7 @@ nav {
   text-decoration: none;
   width: 100%;
   padding: 10px;
-  box-sizing: border-box; /* Inkludera padding i bredden */
+  box-sizing: border-box;
 }
 
 .topnav a {
@@ -90,7 +91,7 @@ nav {
     font-size: 30px;
     color: black;
     cursor: pointer;
-    display: none; /* Dölj på större skärmar */
+    display: none; 
 }
 
 .active {
@@ -109,20 +110,6 @@ footer {
     color: black;
 }
 
-
-.roll{
-/*text-align: center;  */
-}
-
-
-.bet{
-/*text-align: center;*/  
-}
-
-#diceContainer {
-/*text-align: justify;  */
-}
-
   #result {
    display: flex;
    flex-direction: column;
@@ -135,12 +122,12 @@ footer {
 
     .play{
       color: white;
-    /*  text-align: center;*/
+ 
     }
 
 @media (max-width: 768px) {
     .topnav {
-      display: none; /* Visa menyn när användaren klickar */
+      display: none; 
       flex-direction: column;
       width: 100%;
       background-color: #333;
@@ -149,11 +136,11 @@ footer {
     }
 
      .topnav.show {
-                display: flex; /* Visa menyn när användaren klickar */
+                display: flex; 
             }
 
     .icon {
-        display: block; /* Visa hamburgermenyn på små skärmar */
+        display: block; 
     }
   }
 

@@ -33,7 +33,7 @@
     left:var(--left);
       }
 
-      .dice-face {
+  .dice-face {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -67,6 +67,6 @@
       transform: rotateX(455deg) rotateY(455deg);
   }
 }
-     .animate {
+.animate {
     animation: roll 3s;
   }

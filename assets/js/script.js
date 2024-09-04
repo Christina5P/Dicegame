@@ -15,7 +15,7 @@ const playButton = document.getElementById("play");
 const winnervideo = document.createElement("img");
 winnervideo.src = "assets/images/win.gif", alt="winner" 
 const loservideo = document.createElement("img");
-loservideo.src = "assets/images/lose.gif", alt="looser" 
+loservideo.src = "assets/images/lose.gif", alt = "looser"
 
 // Toggle menu on smaller devices
 function toggle() {
@@ -113,36 +113,16 @@ function checkAnswer(randomNumber) {
                         messageElement.textContent = "You won 100 euros!";
                         break;
                 }
-                messageElement.appendChild(winnervideo);
-                winnervideo.loop === false;
-                winnervideo.addEventListener('ended', function () {
-                winnervideo.style.display = none;
-                });
+                 messageElement.appendChild(winnervideo);
+      winnervideo.autoplay = true;
       
-            } else {
-                messageElement.textContent = "You lost";
-                messageElement.appendChild(loservideo);
-                loservideovideo.addEventListener("ended",function(){
-                 console.log("the video is end");
-                 },false);
-                };
-            }
-        
-        console.log(randomNumber);
+} else {
+    messageElement.textContent = "You lost";
+    messageElement.appendChild(loservideo);
+    loservideo.autoplay = true;
+}
+}
+console.log(randomNumber);
+ 
     }, 4000);
 }
-
-/*function GameOver{
-    image.button.removeEventlistener('click', function (event) {
-    });
-    ResetGlobalVariables();
-}*/
-
-function newgame() {
-    playButton.addEventListener("click", function (newgame) {
-         window.scrollTo(0, 0);
-        location.reload();
-        console.log("new game:", reload);
-    });
-}
- newgame();

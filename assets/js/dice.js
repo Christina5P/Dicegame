@@ -51,3 +51,13 @@ dice.addEventListener("click", function () {
     playerChoices.push(randomNumber);
     checkAnswer(randomNumber);
 });
+
+
+function newgame() {
+    playButton.addEventListener("click", function (newgame) {
+         window.scrollTo(0, 0);
+        location.reload();
+        console.log("new game:", reload);
+    });
+}
+ newgame();
