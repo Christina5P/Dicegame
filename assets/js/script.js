@@ -11,11 +11,13 @@ let choicecounter = 0;
 let playerChoices = [];
 let playerHasChosen = false;
 let messageElement = document.getElementById("result");
-const playButton = document.getElementById("play");
+
 const winner_img = document.createElement("img");
-winner_img.src = "assets/images/win.png", alt="winner" 
+winner_img.src = "assets/images/win.png";
+winner_img.alt = "winner";
 const loser_img = document.createElement("img");
-loser_img.src = "assets/images/lose.png", alt = "looser"
+loser_img.src = "assets/images/lose.png";
+loser_img.alt = "looser";
 
 // Toggle menu on smaller devices
 function toggle() {

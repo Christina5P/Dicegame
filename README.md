@@ -9,7 +9,7 @@ https://christina5p.github.io/Dicegame/
 
 * [Project Set Up](#project-set-up)
 
-Dicegame is a game for a wuick bet.
+Dicegame is a game for a quick bet.
 
 If you like numbers, dicegame and bets, this is a simple game to play.
 
@@ -33,6 +33,7 @@ To start you bet from 3 different values and you can easily see your bet, since 
 When you have bet, you get informed how many numbers you will click on and your click change colours, so you can see your choice.
 If you try to pick number before betting, you get an alert
 
+
 ![alert](image-4.png)
 
 ![eurobet](image-1.png)
@@ -48,6 +49,7 @@ After that, you click on the dice to get it roll.
 The dice will roll with the animations and generate a number to compare if it is the same number you have choosen.
 f you win, you should feel like the jumping man with the green dice that pops up and you get a result with the value you win.
 
+
 ![win](image-7.png)
 
 And it´s harder feeling to lose, but make it a new try with the pulling man.
@@ -55,7 +57,6 @@ After your play you can easily click the "play again" button to restart the game
 
 ![lose](image-5.png)
 
-![play again](image-6.png)
 
 ### Instructions
 
@@ -89,8 +90,9 @@ On right hand side tha game will represent a best score list.
 
 
 ## Design
-- Font: Chewy
--Background color is grey in different shadows
+
+* Font: Chewy
+* Background color is grey in different shadows
 
 
 ## Deployment
@@ -132,13 +134,36 @@ In the end I decidecd to use a picture instead, so you don´t get annoyed of a c
 
 * The navbar on smaller screens doesn´t work in instructions page.
 
-<details>
+</details>
 
 
-## Bugs 
+## Test 
 <details><summary>Testing</summary>
 
-<details>
+### HTML Validator
+I have checked the HTML codes through https://validator.w3.org.
+
+![HTML index](image-11.png)
+
+![HTML instructions](image-12.png)
+
+### CSS Validator 
+I have checked css code through https://jigsaw.w3.org/css-validator/#validate_by_input.
+
+![style.css](image-13.png)
+99
+![dice.css](image-14.png)
+
+### JS Hint
+I have checked JS codes through https://jshint.com/
+
+### Responsiveness
+I have checked responsiveness through https://ui.dev/amiresponsive?url=https://christina5p.github.io/Dicegame/
+
+![resposiveness](image-15.png)
+
+###
+</details>
 
 ## Source reference:
  * https://medium.com/@mintholic1/use-google-fonts-to-style-your-javascript-app-a74c6d21147a - insiration of fonts
