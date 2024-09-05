@@ -45,7 +45,7 @@ dice.addEventListener("click", function () {
         alert("Please make a bet before rolling the dice!");
         return; 
     } else
-    dice.classList.remove("show-1", "show-2", "show-3", "show-4", "show-5", "show-6");
+        dice.classList.remove("show-1", "show-2", "show-3", "show-4", "show-5", "show-6");
     dice.classList.add(`show-${randomNumber}`);
     dice.classList.add("animate");
     playerChoices.push(randomNumber);
@@ -53,6 +53,7 @@ dice.addEventListener("click", function () {
 });
 
 const playButton = document.getElementById("play");
+
 function newgame() {
     playButton.addEventListener("click", function (newgame) {
          window.scrollTo(0, 0);

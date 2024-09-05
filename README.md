@@ -8,6 +8,15 @@ https://christina5p.github.io/Dicegame/
 
 
 * [Project Set Up](#project-set-up)
+* [Project Feature](#feature)
+* [Project Future Features to Implement](#future-features-to-implement)
+* [Project Design](#design)
+* [Project Deployment](#deployment)
+* [Project Bugs](#bugs)
+* [Project Test](#test)
+* [Project Source References](#source-reference)
+* [Project Mentions](#mentions)
+* [Project Acknowledgement](#acknowledgement)
 
 Dicegame is a game for a quick bet.
 
@@ -157,10 +166,14 @@ I have checked css code through https://jigsaw.w3.org/css-validator/#validate_by
 ### JS Hint
 I have checked JS codes through https://jshint.com/
 
+![JS Hint](image.png)
+
 ### Responsiveness
 I have checked responsiveness through https://ui.dev/amiresponsive?url=https://christina5p.github.io/Dicegame/
 
 ![resposiveness](image-15.png)
+
+### Lighthouse
 
 ###
 </details>
@@ -210,6 +223,11 @@ I have checked responsiveness through https://ui.dev/amiresponsive?url=https://c
 
 This is a resubmission of my PP2 project.
 I decided to start over with a new repository and the codes from start.
-That was very educational for me, since I got repeat and could see the project whith "new eyes"
-I used the same idea and base and just changed some styling, focus on comsistent code and cover up any chance to missunderstand the game.
-I renamed it to Dicegame instead my old repository:https://github.com/Christina5P/are-you-a-dice-player
+That was very educational for me, since I got repeat and could see the project whith "new eyes" <br>
+I used the same idea of project and base and just changed some styling.
+Focus has been on consistent code and cover up any chance for user to missunderstand the game.
+I renamed it to Dicegame instead my old repository: https://github.com/Christina5P/are-you-a-dice-player
+
+## Acknowledgement 
+
+As my first project, I have been supported from my mentor and studyfellows and friends.

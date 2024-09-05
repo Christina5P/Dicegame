@@ -1,5 +1,3 @@
-console.log("js loaded");
-
 
 const euro = document.querySelectorAll(".image");
 const buttons = document.querySelectorAll(".control");
@@ -29,6 +27,7 @@ function toggle() {
         menu.style.display = "block";
     }
 }
+document.getElementById("menuButton").addEventListener("click", toggle);
 
  //  Event listener for image clicks
      euro.forEach(image => {
@@ -64,8 +63,7 @@ function updatePickNumber(selectedImage) {
         } 
     }
 
-
- // Event listener for number clicks
+// Event listener for number clicks
 buttons.forEach(button => {
     button.addEventListener("click", function(event) {
         changeBoardColor(event, maxChoices);
@@ -95,6 +93,7 @@ function updateRollinstructions(playerChoices) {
         rollInstructionsElement.textContent = `Please pick ${maxChoices} number(s) before rolling the dice.`;
     } 
 }
+    
 // Function to compare playerschoice with dice and resultvideo
 function checkAnswer(randomNumber) {
     let selectedImage = document.querySelector(".image.selected");
