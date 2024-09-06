@@ -1,5 +1,3 @@
-console.log ("dice loaded");
-
 // create a "div" for dice, create randomnumber
 let diceContainer = document.getElementById("diceContainer");
 let randomNumber = Math.floor(Math.random() * 6) + 1;

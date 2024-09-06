@@ -166,7 +166,7 @@ I have checked css code through https://jigsaw.w3.org/css-validator/#validate_by
 ### JS Hint
 I have checked JS codes through https://jshint.com/
 
-![JS Hint](assets/images/readme_img/image.png)
+![JS Hint](assets/images/readme_img/image20.png)
 
 ### Responsiveness
 I have checked responsiveness through https://ui.dev/amiresponsive?url=https://christina5p.github.io/Dicegame/
@@ -174,6 +174,19 @@ I have checked responsiveness through https://ui.dev/amiresponsive?url=https://c
 ![resposiveness](assets/images/readme_img/image-15.png)
 
 ### Lighthouse
+
+![lighthouse mobil](assets/images/readme_img/image-18.png)
+
+![lighthouse desktop](assets/images/readme_img/image-19.png)
+
+### Manual testing
+
+Link to my manual testing:
+https://docs.google.com/document/d/12wZ60kxCfXiNlaQjr20TA5YO_DUnP8CGVxdtsOIgv90/edit?usp=sharing
+
+![manualtest1](assets/images/readme_img/image-16.png)
+
+![manualtest2](assets/images/readme_img/image-17.png)
 
 ###
 </details>

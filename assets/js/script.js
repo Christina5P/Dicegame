@@ -33,8 +33,7 @@ document.getElementById("menuButton").addEventListener("click", toggle);
      euro.forEach(image => {
          image.addEventListener("click", function () {
              selectedImage = image;
-               console.log("Image clicked:", selectedImage);
-             
+                            
       euro.forEach(img => {
             if (img !== selectedImage) {
                 img.classList.add("hidden");
@@ -116,7 +115,5 @@ function checkAnswer(randomNumber) {
             messageElement.textContent = "You lost";
             messageElement.appendChild(loser_img);
         }
-        
-        console.log(randomNumber);
     }, 4000); 
 }
