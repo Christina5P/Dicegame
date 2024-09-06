@@ -1,5 +1,5 @@
 # Dicegame
-![dicegame](image.png)
+![dicegame](assets/images/readme_img/dicegame.png)
 
 https://christina5p.github.io/Dicegame/
 
@@ -35,7 +35,7 @@ The idea is taken from the betwheel at the fairground.
 <details><summary>Features</summary>
 
 ### Play
-![play](image.png)
+![play](assets/images/readme_img/image.png)
 
 To start you bet from 3 different values and you can easily see your bet, since the other values dissapear after your choice. 
 
@@ -43,47 +43,47 @@ When you have bet, you get informed how many numbers you will click on and your 
 If you try to pick number before betting, you get an alert
 
 
-![alert](image-4.png)
+![alert](assets/images/readme_img/image-4.png)
 
-![eurobet](image-1.png)
+![eurobet](assets/images/readme_img/image-1.png)
 
 When you have choosed numbers, you are ready to roll the dice by clicking on it.
 If you try to roll the dice before picking all the numbers, you get an alert.
 
-![alert](image-3.png)
+![alert](assets/images/readme_img/image-3.png)
 
-![numbers](image-2.png)
+![numbers](assets/images/readme_img/image-2.png)
 
 After that, you click on the dice to get it roll.
 The dice will roll with the animations and generate a number to compare if it is the same number you have choosen.
 f you win, you should feel like the jumping man with the green dice that pops up and you get a result with the value you win.
 
 
-![win](image-7.png)
+![win](assets/images/readme_img/image-7.png)
 
 And it´s harder feeling to lose, but make it a new try with the pulling man.
 After your play you can easily click the "play again" button to restart the game.
 
-![lose](image-5.png)
+![lose](assets/images/readme_img/image-5.png)
 
 
 ### Instructions
 
 There is a page with instructions, and you can switch between play and instructions in the navbar.
 
-![instructions](image-9.png)
+![instructions](assets/images/readme_img/image-9.png)
 
 ### Navbar
 
 On top there is a navbar for Play and Instructions.
 An smaller decices, there is an icon instead and when you click on the menuicon, you see the navbar.
 
-![navbar](image-8.png)
+![navbar](assets/images/readme_img/image-8.png)
 
 ### Footer 
 A copyright of the game creator.
 
-![copyright](image-10.png)
+![copyright](assets/images/readme_img/image-10.png)
 
 </details>
 
@@ -152,26 +152,26 @@ In the end I decidecd to use a picture instead, so you don´t get annoyed of a c
 ### HTML Validator
 I have checked the HTML codes through https://validator.w3.org.
 
-![HTML index](image-11.png)
+![HTML index](assets/images/readme_img/image-11.png)
 
-![HTML instructions](image-12.png)
+![HTML instructions](assets/images/readme_img/image-12.png)
 
 ### CSS Validator 
 I have checked css code through https://jigsaw.w3.org/css-validator/#validate_by_input.
 
-![style.css](image-13.png)
+![style.css](assets/images/readme_img/image-13.png)
 99
-![dice.css](image-14.png)
+![dice.css](assets/images/readme_img/image-14.png)
 
 ### JS Hint
 I have checked JS codes through https://jshint.com/
 
-![JS Hint](image.png)
+![JS Hint](assets/images/readme_img/image.png)
 
 ### Responsiveness
 I have checked responsiveness through https://ui.dev/amiresponsive?url=https://christina5p.github.io/Dicegame/
 
-![resposiveness](image-15.png)
+![resposiveness](assets/images/readme_img/image-15.png)
 
 ### Lighthouse
 
@@ -179,6 +179,7 @@ I have checked responsiveness through https://ui.dev/amiresponsive?url=https://c
 </details>
 
 ## Source reference:
+<details><summary>Source references</summary>
  * https://medium.com/@mintholic1/use-google-fonts-to-style-your-javascript-app-a74c6d21147a - insiration of fonts
  * https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar_hor -tutoring responsive navbar
  * https://www.youtube.com/watch?v=t0CdtUEzfLo _tutoring 3D dice
@@ -218,6 +219,8 @@ I have checked responsiveness through https://ui.dev/amiresponsive?url=https://c
    - Investigate video autoplay
  * https://www.youtube.com/watch?v=XTF5jXDr2H8 - Tutoring and help me with codes for dice animation
  * https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_loc_reload -Tutor to reload the game
+
+</details>
 
 ## Mentions
 
